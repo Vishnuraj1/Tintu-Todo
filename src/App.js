@@ -5,12 +5,13 @@ function App() {
   const [toDos, setToDos] = useState([])
   const [toDo, setToDo] = useState('')
 
-  const [Delete, setDelete] = useState(toDos)
+  // const [Delete, setDelete] = useState(toDos)
 
-  const Del =(index)=>{
+   const Del =(id)=>{
     const newTask =[...toDos]
-    newTask.splice(index,1)
-    setDelete(newTask)
+    newTask.splice(id,1)
+    setToDos(newTask)
+   
 }
 
   return (
@@ -58,26 +59,10 @@ function App() {
             <div className="right">
 
               {/* delete button  */}
-              <i onClick={(e)=>  
-              // console.log(e)
-              setToDos(toDos.filter(obj2 => {
-                  if (obj2.id === obj.id) {
-                    
-                    // const newtask = obj2
-                    
-                    // console.log(newtask)
-                    // newtask.splice()
-                    setToDos(obj2)
-                    // console.log(obj2.id)
-                    // obj2.id = e.target.id
-                    // const newtask =obj2
-                    // newtask.splice(obj2.id,1)
-                     console.log(obj2.id)
-                     console.log(obj.id )
-                  }
-                  return obj2
-                }))
-            }
+              <i
+               onClick={()=>Del(toDos.id)}
+            
+           
                  className="fas fa-times"></i>
 
             </div>
@@ -88,7 +73,7 @@ function App() {
 
         {toDos.map((obj) => {
           if (obj.status) {
-            return (<h1>{obj.text}</h1>)
+            return (<h1 key={obj.id}>{obj.text}</h1>)
           }
           return null
         })}

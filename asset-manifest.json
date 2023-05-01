@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Todo-app-Tintu-/static/css/main.ea7d9816.css",
-    "main.js": "/Todo-app-Tintu-/static/js/main.02f66d71.js",
-    "index.html": "/Todo-app-Tintu-/index.html",
-    "main.ea7d9816.css.map": "/Todo-app-Tintu-/static/css/main.ea7d9816.css.map",
-    "main.02f66d71.js.map": "/Todo-app-Tintu-/static/js/main.02f66d71.js.map"
+    "main.css": "/Tintu-Todo/static/css/main.ea7d9816.css",
+    "main.js": "/Tintu-Todo/static/js/main.02f66d71.js",
+    "index.html": "/Tintu-Todo/index.html",
+    "main.ea7d9816.css.map": "/Tintu-Todo/static/css/main.ea7d9816.css.map",
+    "main.02f66d71.js.map": "/Tintu-Todo/static/js/main.02f66d71.js.map"
   },
   "entrypoints": [
     "static/css/main.ea7d9816.css",
